@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  const META = 1200000;
+  const META = 2000000;
 
   axios.get('https://api.catarse.me/project_details?project_id=eq.122021')
     .then((projectRes) => {
@@ -54,7 +54,7 @@ function formatMoney(number = 0, prefix = true) {
   }
 }
 
-function calcPercent(number = 0, total = 1200000) {
+function calcPercent(number = 0, total = 2000000) {
   return (number * 100) / total;
 }
 
